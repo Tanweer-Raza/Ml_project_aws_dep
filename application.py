@@ -27,7 +27,8 @@ MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_DIR_NAME)
 INSURANCE_PREMIUM_DATA_KEY = "insurance_premium_data"
 INSURANCE_PREMIUM_VALUE_KEY = "healthrisk_value"
 
-app = Flask(__name__)
+application = Flask(__name__)
+application = app
 
 
 @app.route('/artifact', defaults={'req_path': 'insurance_premium'})
