@@ -28,7 +28,7 @@ INSURANCE_PREMIUM_DATA_KEY = "insurance_premium_data"
 INSURANCE_PREMIUM_VALUE_KEY = "healthrisk_value"
 
 application = Flask(__name__)
-application = app
+app = application
 
 
 @app.route('/artifact', defaults={'req_path': 'insurance_premium'})
